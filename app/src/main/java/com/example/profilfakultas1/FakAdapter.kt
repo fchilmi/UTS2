@@ -23,7 +23,6 @@ class FakAdapter(val ItemList: List<FakData>, val clickListener: (FakData) -> Un
         fun bind(fak: FakData, clickListener: (FakData) -> Unit) {
             itemView.namaFak.text = fak.namaFak.toString()
             itemView.fotoUPN.setImageResource(fak.fotoFak)
-
             itemView.setOnClickListener{clickListener(fak)}
         }
     }
